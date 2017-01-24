@@ -13,7 +13,7 @@ ENV CATALINA_OPTS "-Dcom.sun.management.jmxremote \
 ENV JPDA_ADDRESS 8000
 
 # add application properties to classpath
-COPY application.properties /usr/local/tomcat/lib/
+COPY application_local.properties /usr/local/tomcat/lib/
 
 #override users config to add new user (deployer:deployer)
 COPY tomcat-users.xml /usr/local/tomcat/conf/
